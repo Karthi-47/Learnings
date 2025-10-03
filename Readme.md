@@ -3,10 +3,10 @@
 ### Day 1
 1. Getting Started ✔
 2. Basics of JavaScript ✔
-3. Conditional and Control Statements
-4. Functions in JavaScript
-5. ES6
+3. Conditional and Control Statements ✔
+4. Functions in JavaScript ✔
 ### Day 2
+5. ES6
 6. Functional Programming
 7. Object Oriented JavaScript
 8. Asynchronous JavaScript
@@ -90,5 +90,53 @@ do {
     // code to be executed at least once
 } while (condition);
 ```
+### for-in loop
+* for-in loops allows you to loop through the properties of an object.
+```
+for (variable in object) {
+    // code to execute for each property
+}
+```
+* Example :
+```
+let person = {
+    name: "Karthi",
+    age: 22,
+    city: "Chennai"
+};
+
+for (let key in person) {
+    console.log(key + ": " + person[key]);
+}
+```
+#### Output :
+```
+name: Karthi
+age: 22
+city: Chennai
+```
+## Functions In JavaScript
+* A Function is a block of code designed to perform a particular task.
+* Functions are reusable and can be called multiple times.
+* Syntax :
+```
+function functionName(parameters) {
+    // code to be executed
+}
+```
+* Example :
+```
+function greet(name) {
+    return "Hello, " + name + "!";
+    console.log(greet("Karthi")); 
+}   
+
+Output: Hello, Karthi!
+```
+* **Function Declaration :** A function defined with the function keyword and a name, ready to use anywhere in its scope.
+
+* **Function Expression :** A function assigned to a variable, usable only after the assignment.
+
+* **Hoisting :** JavaScript’s behavior of moving function and variable declarations to the top of their scope before execution.
 
 
